@@ -1,7 +1,17 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+// First call to define "parchment" height
+document.onload = ScrollHeight();
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
-})
+// Redraw when viewport is modified
+window.addEventListener('resize', function (event) {
+    ScrollHeight();
+});
 
+
+function ScrollHeight() {
+    var content = document.querySelector('#parchment');
+    var container = document.querySelector('#contain');
+
+    // SVG feTurbulence can modify all others elements, for this reason "parchment" is in another <div> and in absolute position.
+    // so for a better effect, absolute height is defined by his content.
+    content.style.height = container.offsetHeight + 'px';
+}
