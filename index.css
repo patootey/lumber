@@ -142,7 +142,7 @@ gap: .5rem;
     position: relative;
     justify-content: space-between;
     align-items: center; 
-    background-color: #EFEFEF;
+    background-color: white;
     color: black;
     border-bottom: solid gray 1px;
 }
