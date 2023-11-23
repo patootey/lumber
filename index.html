@@ -1,63 +1,53 @@
 <!DOCTYPE html>
 <html lang="nb">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-    <title>Tømmer</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <title>Tømmer</title>
+</head>
 
-  <body class="paper-background">
-    <main>
-      <div id="parchment"></div>
-      <div id="contain">
-        <p class="inkTitle">Tømmerbedrift</p>
-        <p id="labarum">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Chi_Rho.svg/1200px-Chi_Rho.svg.png"
-          />
+<body class="paper-background">
+  <main>
+    <div id="parchment"></div>
+    <div id="contain">
+      <p class="inkTitle">Tømmerbedrift</p>
+      <p id="labarum">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Chi_Rho.svg/1200px-Chi_Rho.svg.png" />
+      </p>
+      <h1>Overskrift</h1>
+        <p>
+          Union Co. Var en norsk treforedlingsbedrift grunnlagt av Benjamin Sewell i 1873 i Skien, ved Damfoss i Skienselva. Benjamin Sewell var en norsk-britisk sivilingeniør. Bedriften eide en papirfabrikk, og jobbet opprinnelig med tresliperi. De etablerte også en sulfittcellulosefabrikk. Fra 1890 ble bedriften den ledende innen norsk treforedling. I lange periode eide de også helt eller delvis flere andre norske treforedlingfabrikker, samt kraftverk i Skiens- og Drammensvassdraget. 
         </p>
-        <div class="video-gallery">
-            <div class="video-container">
-              <div class="video">
-                <div class="video_1">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/8a1jmwNpBPk"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    alt="video av hvorfor Facebook har byttet navn til Meta"
-                  ></iframe>
-                </div>
+
+          <div class="content">
+            <section class="component">
+              <div class="image">
+                <img class="image" src="test.jpg" alt="bilde av søt katt" />
               </div>
-            </div>
-        <p>
-            HEr skal det kanskje komme en intrduksjonsvideo
-        </p>
-        <p>
-            Mye kult fakta
-        </p>
+              <div class="description">
+                <div class="second">
+                  <h2>Underoverskrift</h2>
+                </div>
 
-        <br/>
+                <p>Test</p>
+
+              </div>
+            </section>
+          </div>
+        </p>
+        <br />
       </div>
-    </main>
+    </div>
+  </main>
 
-    <svg>
-      <filter id="wavy2">
-        <feTurbulence
-          x="0"
-          y="0"
-          baseFrequency="0.02"
-          numOctaves="5"
-          seed="1"
-        />
-        <feDisplacementMap in="SourceGraphic" scale="20" />
-      </filter>
-    </svg>
-  </body>
+  <svg>
+    <filter id="wavy2">
+      <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1" />
+      <feDisplacementMap in="SourceGraphic" scale="20" />
+    </filter>
+  </svg>
+</body>
 </html>

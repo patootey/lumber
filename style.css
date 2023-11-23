@@ -41,6 +41,30 @@ https://stackoverflow.com/questions/14585101/old-paper-background-texture-with-j
 August 2021 : ok on Chrome v92+, Firefox v90+, Edge v92+
 */
 
+
+section.component {
+  display: flex;
+  width: 100%;
+}
+
+
+section.component p{
+  flex: 3;
+}
+section.component div.image {
+  flex: 2;
+  width: 100%;
+}
+
+section.component div.image img {
+  width: 100%;
+  height: auto;
+}
+.content {
+  margin: 10px 20px 10px 20px;
+}
+
+
 #parchment {
   position: absolute;
   display: flex;
@@ -65,14 +89,7 @@ main p {
   margin-top: 0.75em;
   text-align: justify;
 }
-/*
-div p:not(:first-child)::first-letter {
-  float: left;
-  font: 1.7em/1em Morris;
-  text-shadow: 1px 1px 1px #000;
-  margin: 0 .5rem;
-}
-*/
+
 
 #contain {
   position: relative;
@@ -146,4 +163,9 @@ div p:not(:first-child)::first-letter {
 .video-container {
   /* margin-right: 10px; */
   flex: 1;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
