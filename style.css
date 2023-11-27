@@ -9,6 +9,7 @@
   --fontSize: calc((1vw + 1vh) * 0.75);
 }
 
+
 *,
 *:before,
 *:after {
@@ -23,7 +24,7 @@ body {
 }
 
 body {
-  font-family: Pirata One, sans-serif;
+  font-family: Bookman Old Style;
   background-image: url(https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
   background-size: cover;
 }
@@ -34,19 +35,11 @@ main {
   height: auto;
 }
 
-/* WARNING ! This solution seems to not work on all navigators.
-This problem was reported to me on :
-https://stackoverflow.com/questions/14585101/old-paper-background-texture-with-just-css/
-
-August 2021 : ok on Chrome v92+, Firefox v90+, Edge v92+
-*/
-
 
 section.component {
   display: flex;
-  width: 100%;
+  width: 75%;
 }
-
 
 section.component p{
   flex: 3;
@@ -61,9 +54,13 @@ section.component div.image img {
   height: auto;
 }
 .content {
-  margin: 10px 20px 10px 20px;
+  margin: 10px 10px 10px 10px;
 }
 
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -50px;
+}
 
 #parchment {
   position: absolute;
