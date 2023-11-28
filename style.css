@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.second {
+  padding: auto;
+  border: 5px;
+}
 html,
 body {
   height: 100%;
@@ -23,13 +27,15 @@ main {
   height: auto;
 }
 
+
 section.component {
   display: flex;
-  width: 75%;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line if needed */
 }
 
 section.component p {
-  flex: 3;
+  flex: 1; /* Adjust the flex value as needed */
+  margin-right: 20px; /* Add spacing between text and image */
 }
 
 section.component div.image {
@@ -43,12 +49,12 @@ section.component div.image img {
 }
 
 .content {
-  margin: 10px 10px 10px 10px;
+  margin: 10px 10px 20px 10px;
 }
 
 .wrapper {
-  min-height: 100%;
-  margin: 0 auto -50px;
+  min-height: 100vh; /* Change -50px to vh for better responsiveness */
+  margin: 0 auto;
 }
 
 #parchment {
@@ -67,11 +73,16 @@ section.component div.image img {
   filter: url(#wavy2);
 }
 
-main p {
+main h1,h2, main p {
   font-size: 2.25em;
   color: #7f3300;
   margin-top: 0.75em;
-  text-align: justify;
+  text-align: left;
+}
+
+#labarum {
+  width: 20%;
+  /* Remove fixed margin and height */
 }
 
 #contain {
@@ -93,11 +104,7 @@ main p {
   opacity: 0.6;
 }
 
-#labarum {
-  width: 20%;
-  margin-left: calc((100% - 20%) / 2);
-  height: auto;
-}
+
 
 .cachet {
   /* image width = 210px and height = 250px */
@@ -109,21 +116,27 @@ main p {
   margin-left: auto;
 }
 
+
 #labarum img,
 .cachet img {
-  object-fit: cover;
+  object-fit:cover;
   width: 100%;
   height: 100%;
 }
 
+/*
 #signature {
   text-align: right;
   color: black;
   font-size: 250%;
 }
+*/
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+  main h1,h2, main p {
+    font-size: 1.25em;
+    color: #7f3300;
+    margin-top: 0.75em;
+    text-align:left;
   }
 }
