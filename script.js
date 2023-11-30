@@ -1,3 +1,4 @@
+
 // Define the function to adjust the height
 function scrollHeight() {
     var content = document.querySelector('#parchment');
@@ -15,10 +16,11 @@ function scrollHeight() {
         image.style.height = '100%';
     });
 }
-// Call the function after the page is fully loaded
-window.onload = function () {
+
+// Call the function when the DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', function () {
     scrollHeight();
-};
+});
 
 // Redraw when viewport is modified
 window.addEventListener('resize', function (event) {
