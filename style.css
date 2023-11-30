@@ -79,6 +79,7 @@ section.component div.image img:hover{
   filter: url(#wavy2);
   padding: 2em; /* Adjust padding as needed */
   width: 75%;
+  height: fit-content;
 }
 
 

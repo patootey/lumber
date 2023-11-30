@@ -9,12 +9,6 @@ function scrollHeight() {
     // so for a better effect, absolute height is defined by its content.
     content.style.height = container.offsetHeight + 'px';
 
-    // Loop through img elements and add styles
-    img.forEach(function (image) {
-        image.style.objectFit = 'cover';
-        image.style.width = '100%';
-        image.style.height = '100%';
-    });
 }
 
 // Call the function when the DOM content is fully loaded
