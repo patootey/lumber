@@ -76,7 +76,9 @@ section.component div.image img:hover{
   background: #fffef0;
   /* v2.1 : borders effect with SVG : try to play with scale to change them */
   filter: url(#wavy2);
+  min-height: 100vh; /* Set a minimum height equal to the viewport height */
 }
+
 
 main h1,h2, main p {
   font-size: 2.25em;
