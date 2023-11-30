@@ -20,12 +20,14 @@ body {
   font-family: Bookman Old Style;
   background-image: url(https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
   background-size: cover;
+  margin: 0; /* Remove default body margin */
 }
 
 main {
-  position: relative;
-  width: 100%;
-  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 
@@ -74,22 +76,24 @@ section.component div.image img:hover{
   padding: 4em;
   box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
   background: #fffef0;
-  /* v2.1 : borders effect with SVG : try to play with scale to change them */
   filter: url(#wavy2);
-  min-height: 100vh; /* Set a minimum height equal to the viewport height */
+  padding: 2em; /* Adjust padding as needed */
+  width: 75%;
 }
 
+
+
+
+
+#contain {
+  width: 100%;
+}
 
 main h1,h2, main p {
   font-size: 2.25em;
   color: #7f3300;
   margin-top: 0.75em;
   text-align: left;
-}
-
-#labarum {
-  width: 20%;
-  /* Remove fixed margin and height */
 }
 
 #contain {
@@ -111,22 +115,24 @@ main h1,h2, main p {
   opacity: 0.6;
 }
 
+#labarum {
+  width: 20%;
+  margin-left: calc((100% - 20%) / 2);
+  height: auto;
+}
 
 
 .cachet {
   /* image width = 210px and height = 250px */
   /*  5 is one common denominator 210 = 5 * 42 */
   width: calc((100vw * 5) / 42);
-  height: auto;
-  /* Height is auto ajusted */
+  height: auto; /* Height is auto ajusted */
   margin-top: 4rem;
   margin-left: auto;
 }
 
-
-#labarum img,
-.cachet img {
-  object-fit:cover;
+#labarum img, .cachet img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
