@@ -152,7 +152,8 @@ main h1,h2, main p {
     text-align:left;
   }
   #parchment {
-    min-height: 5000px;
+    min-height: 2500px;
+    height: 2500px;
 
   }
 }
