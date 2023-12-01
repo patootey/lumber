@@ -58,7 +58,7 @@ section.component div.image img:hover{
   margin: 0 auto;
 }
 
-#parchment {
+#parchment_filter {
   position: absolute;
   display: flex;
   width: 75%;
@@ -74,6 +74,14 @@ section.component div.image img:hover{
   padding: 2em; /* Adjust padding as needed */
   width: 75%;
 }
+#parchment {
+  display: flex;
+  /* center page with absolute position */
+  margin: 3em 6em;
+  padding: 20px;
+  box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+  background: #fffef0;
+}
 
 
 main h1,h2, main p {
@@ -88,7 +96,7 @@ main h1,h2, main p {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   /* padding: 4em; */
@@ -99,7 +107,7 @@ main h1,h2, main p {
   font-family: Pirata One, sans-serif;
   text-align: center;
   line-height: 3em;
-  color: rgb(255, 21, 21);
+  color: rgb(21, 255, 126);
   opacity: 0.6;
 }
 
@@ -129,12 +137,22 @@ main h1,h2, main p {
 @media only screen and (max-width: 600px) {
   main h1,h2, main p {
     font-size: 1.25em;
-    color: #7f3300;
-    margin-top: 0.75em;
-    text-align:left;
   }
-  #parchment {
-    height: fit-content;
+  #parchment{
+    margin: 1em;
+    padding: 15px;
+  }
+}
 
+@media only screen and (max-width: 300px) {
+  main h1,h2, main p {
+    font-size: 1.25em;
+  }
+
+  #parchment{
+    margin: 10px 15px 20px 30px;
+  }
+  .inkTitle {
+    font-size: 2em;
   }
 }
