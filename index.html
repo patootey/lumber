@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/jpg" href="bilder/tre.jpg" >
+  <link rel="icon" type="image/jpg" href="bilder/tre.jpg">
   <title>Tømmer</title>
 </head>
 
@@ -105,7 +105,7 @@
         <div class="content">
           <section class="component">
             <div class="image">
-              <img class="image" src="bilder/number_4.jpg" height="2792" width="4000"/>
+              <img class="image" src="bilder/number_4.jpg" height="2792" width="4000" />
             </div>
             <div class="description">
 
@@ -187,28 +187,45 @@
     </filter>
   </svg>
   <script>
-    
-// Define the function to adjust the height
-function scrollHeight() {
-    var content = document.querySelector('#parchment');
-    var container = document.querySelector('#contain');
 
+    // Define the function to adjust the height
+    function scrollHeight() {
+      var content = document.querySelector('#parchment');
+      var container = document.querySelector('#contain');
+      
 
-    // SVG feTurbulence can modify all other elements, for this reason "parchment" is in another <div> and in absolute position.
-    // so for a better effect, absolute height is defined by its content.
-    content.style.height = container.offsetHeight + 'px';
+      // SVG feTurbulence can modify all other elements, for this reason "parchment" is in another <div> and in absolute position.
+      // so for a better effect, absolute height is defined by its content.
+      content.style.height = container.offsetHeight + 'px';
 
-}
+    }
 
-// Call the function when the DOM content is fully loaded
-document.addEventListener('DOMContentLoaded', function () {
-    scrollHeight();
-});
+    // Call the function when the DOM content is fully loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      if (console) {
+        console.log("DOMContentLoaded")
+      }
+      scrollHeight();
+    });
 
-// Redraw when viewport is modified
-window.addEventListener('resize', function (event) {
-    scrollHeight();
-});
+    var images = document.querySelectorAll("img")
+    for (let i = 0; i < images.length ;i++){
+      images[i].addEventListener("load", function (){
+        if (console) {
+        console.log("img.load")
+      }
+        scrollHeight();
+      })
+    }
+
+    // Redraw when viewport is modified
+    window.addEventListener('resize', function (event) {
+
+      if (console) {
+        console.log("resize")
+      }
+      scrollHeight();
+    });
 
 
   </script>
