@@ -79,8 +79,6 @@ section.component div.image img:hover{
   filter: url(#wavy2);
   padding: 2em; /* Adjust padding as needed */
   width: 75%;
-  min-height: fit-content;
-  height: fit-content;
 }
 
 #contain {
@@ -152,8 +150,7 @@ main h1,h2, main p {
     text-align:left;
   }
   #parchment {
-    min-height: 2500px;
-    height: 2500px;
+    height: fit-content;
 
   }
 }
