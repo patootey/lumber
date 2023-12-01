@@ -17,7 +17,6 @@ body {
   background-size: cover;
   margin: 0; /* Remove default body margin */
 }
-
 main {
   display: flex;
   justify-content: center;
@@ -84,6 +83,7 @@ main h1,h2, main p {
   text-align: left;
 }
 
+
 #contain {
   position: relative;
   display: flex;
@@ -99,7 +99,7 @@ main h1,h2, main p {
   font-family: Pirata One, sans-serif;
   text-align: center;
   line-height: 3em;
-  color: black;
+  color: rgb(255, 21, 21);
   opacity: 0.6;
 }
 
