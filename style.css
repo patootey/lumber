@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  font-family: Bookman Old Style;
+  font-family: 'Crimson Text', serif;
   background-image: url(https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
   background-size: cover;
   margin: 0; /* Remove default body margin */
@@ -32,7 +32,7 @@ section.component {
 
 section.component p {
   flex: 1; /* Adjust the flex value as needed */
-  margin-right: 20px; /* Add spacing between text and image */
+  /*margin-right: 20px; /* Add spacing between text and image */
 }
 
 section.component div.image {
@@ -44,14 +44,7 @@ section.component div.image img {
   width: 100%;
   height: auto;
 }
-/*
-section.component div.image img:hover{
-  /*width: 50%;
-}
-*/
-.content {
-  margin: 10px 10px 20px 10px;
-}
+
 
 .wrapper {
   min-height: 100vh; /* Change -50px to vh for better responsiveness */
@@ -59,6 +52,7 @@ section.component div.image img:hover{
 }
 
 #parchment_filter {
+
   position: absolute;
   display: flex;
   width: 75%;
@@ -75,6 +69,7 @@ section.component div.image img:hover{
   width: 75%;
 }
 #parchment {
+  border-radius:5px;
   display: flex;
   /* center page with absolute position */
   margin: 3em 6em;
@@ -103,12 +98,14 @@ main h1,h2, main p {
 }
 
 .inkTitle {
-  font-size: 3em;
-  font-family: Pirata One, sans-serif;
+  font-size: 80pt;
+  font-weight: 600;
+  font-family:  'Crimson Text', serif;
   text-align: center;
-  line-height: 3em;
-  color: rgb(21, 255, 126);
+  line-height: 1em;
+  color: rgb(33, 34, 33);
   opacity: 0.6;
+  margin: 40px 10px;
 }
 
 #labarum {
@@ -121,14 +118,14 @@ main h1,h2, main p {
 .cachet {
   /* image width = 210px and height = 250px */
   /*  5 is one common denominator 210 = 5 * 42 */
-  width: calc((100vw * 5) / 42);
+  /*width: calc((100vw * 5) / 42);
   height: auto; /* Height is auto ajusted */
-  margin-top: 4rem;
+  margin-top: 1rem;
   margin-left: auto;
 }
 
 #labarum img, .cachet img {
-  object-fit: cover;
+  /*object-fit: cover;*/
   width: 100%;
   height: 100%;
 }
@@ -142,6 +139,11 @@ main h1,h2, main p {
     margin: 1em;
     padding: 15px;
   }
+  .inkTitle {
+    font-size: 45pt;
+    font-weight: 600;
+
+  }
 }
 
 @media only screen and (max-width: 300px) {
@@ -154,5 +156,7 @@ main h1,h2, main p {
   }
   .inkTitle {
     font-size: 2em;
+    font-weight: 600;
+
   }
 }
