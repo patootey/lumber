@@ -43,6 +43,7 @@ section.component div.image {
 section.component div.image img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 
@@ -105,7 +106,7 @@ main h1,h2, main p {
   line-height: 1em;
   color: rgb(33, 34, 33);
   opacity: 0.6;
-  margin: 40px 10px;
+  margin: 40px;
 }
 
 #labarum {
